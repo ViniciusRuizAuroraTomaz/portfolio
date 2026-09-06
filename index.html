@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vinicius Tomaz</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+    <script src="https://kit.fontawesome.com/391ce7cbeb.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header class="fixed top-6 left-0 w-full z-[1000] flex justify-center px-4">
+        <nav
+            class="w-fit h-[50px] flex items-center bg-(--glass) border border-(--border) rounded-full px-2 mx-auto backdrop-blur-sm sticky top">
+            <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false"
+                aria-controls="main-menu">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+            <ul id="main-menu" class="ul-nav flex gap-2 text-lg">
+                <li><a href="">Home</a></li>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Tecnologias</a></li>
+                <li><a href="">Projetos</a></li>
+                <button class="btn btn-red px-4 rounded-full">Contato</button>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="hero" class="pt-12">
+        <div class="mx-auto max-w-[1440px] mt-10">
+            <p class="mb-10 text-center text-white/25">&lt;/&gt;</p>
+            <h1 class="text-[clamp(3rem,10vw,10rem)] text-(--title-color) uppercase tracking-[-0.04em] text-center">
+                Vinícius <span class="text-(--red)" id="tomaz">Tomaz</span>
+            </h1>
+            <p class="text-center text-xl">Programador</p>
+            <div class="hero-actions flex justify-center mt-15 gap-3">
+                <button class="btn btn-transparent py-3 px-8 text-2xl rounded-full">
+                    Contato
+                </button>
+                <button class="btn btn-red py-3 px-6 text-2xl rounded-full">
+                    Projetos
+                </button>
+            </div>
+        </div>
+        <a href="" class="mx-auto relative left-1.5 mt-auto mb-15 border p-2 border-white/10 rounded-full"><i
+                class="fa-solid fa-chevron-down text-white/20 arrow"></i></a>
+    </section>
+    <!-- SOBRE -->
+    <section class="wrapper flex w-full flex-col gap-6">
+        <h2 class="text-4xl text-(--title-color)">
+            <span class="text-(--red)">//</span> Sobre
+        </h2>
+
+        <div class="grid grid-cols-1 gap-3 lg:grid-cols-3">
+
+            <article
+                class="flex min-h-[400px] flex-col rounded-2xl border border-(--border) bg-(--card-color) p-6 transition-colors duration-300 hover:border-(--red)">
+
+                <div class="flex items-center gap-4 border-b border-(--border) pb-5">
+                    <div
+                        class="flex aspect-square w-[70px] shrink-0 items-center justify-center rounded-full border-2 border-(--red)">
+                        <span class="text-2xl font-semibold text-(--red)">
+                            VT
+                        </span>
+                    </div>
+
+                    <div class="flex flex-col gap-1">
+                        <h3 class="text-xl text-(--red)">
+                            Vinícius Tomaz
+                        </h3>
+
+                        <p class="text-sm">
+                            Programador Full Stack
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex flex-1 items-center py-6">
+                    <p class="leading-relaxed">
+                        Olá, me chamo Vinícius, tenho 17 anos e sou programador.
+                        Atualmente estudo no Colégio Cotemig e estou no segundo ano
+                        do curso. Meu objetivo é desenvolver sistemas e aplicações
+                        web, sempre buscando aprender novas tecnologias e evoluir
+                        profissionalmente. Estou aberto a oportunidades de estágio
+                        para adquirir experiência prática e conhecer melhor o
+                        ambiente profissional.
+                    </p>
+                </div>
+
+            </article>
+
+            <article
+                class="flex min-h-[400px] flex-col rounded-2xl border border-(--border) bg-(--card-color) p-6 transition-colors duration-300 hover:border-(--red) lg:col-span-2">
+
+                <div class="grid grid-cols-1 gap-10 pb-8 sm:grid-cols-2">
+
+                    <div>
+                        <div class="mb-4 flex items-center gap-3">
+
+                            <h3 class="text-xl text-(--title-color)">
+                                <span class="text-(--red)">//</span> Formação
+                            </h3>
+                        </div>
+
+                        <p class="leading-relaxed">
+                            Cursando o ensino técnico em Programação
+                            no Colégio Cotemig.
+                        </p>
+
+                        <span class="mt-5 block text-sm">
+                            2/25 - 12/27
+                        </span>
+                    </div>
+
+                    <div>
+                        <div class="mb-4 flex items-center gap-3">
+
+                            <h3 class="text-xl text-(--title-color)">
+                                <span class="text-(--red)">//</span> Redes sociais
+                            </h3>
+                        </div>
+
+                        <p class="leading-relaxed">
+                            Me encontre também nas minhas redes e plataformas.
+                        </p>
+
+                        <div class="mt-5 flex gap-4">
+                            <a href="https://github.com/ViniciusRuizAuroraTomaz?tab=repositories"
+                                class="text-xl transition-colors hover:text-(--red)">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/vinícius-ruiz-aurora-tomaz-10686b362/"
+                                class="text-xl transition-colors hover:text-(--red)">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+
+                            <a href="mailto:viniciusauroratomaz@gmail.com"
+                                class="text-xl transition-colors hover:text-(--red)">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flex flex-1 flex-col justify-center border-t border-(--border) pt-8">
+
+                    <div class="mb-5 flex items-center gap-3">
+
+                        <h3 class="text-xl text-(--title-color)">
+                            <span class="text-(--red)">//</span> Mentalidade
+                        </h3>
+                    </div>
+
+                    <div class="grid grid-cols-1 gap-3 sm:grid-cols-3">
+
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-plus text-xs text-(--red)"></i>
+                            <span>Ambicioso e focado em evolução</span>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-plus text-xs text-(--red)"></i>
+                            <span>Curioso sobre novas tecnologias</span>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-plus text-xs text-(--red)"></i>
+                            <span>Sempre buscando novos desafios</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+    </section>
+
+    <!-- TECNOLOGIAS -->
+    <section class="wrapper w-fit flex flex-col items-center gap-3">
+        <h2 class="text-4xl mr-auto text-(--title-color)"><span class="text-(--red)">//</span> Tecnologias</h2>
+        <div class="grid gap-3 grid-cols-2 sm:grid-cols-4 max-w-[1200px] w-full">
+            <article class="p-4 flex flex-col items-center justify-center gap-1.5 bg-(--card-color) rounded-lg">
+                <img class="max-w-[150px]"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                <h4 class="text-center">JavaScript</h4>
+            </article>
+
+            <article class="p-4 flex flex-col items-center justify-center gap-1.5 bg-(--card-color) rounded-lg">
+                <img class="max-w-[150px]"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+                <h4 class="text-center">TypeScript</h4>
+            </article>
+
+            <article class="p-4 flex flex-col items-center justify-center gap-1.5 bg-(--card-color) rounded-lg">
+                <img class="max-w-[150px]"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+                <h4 class="text-center">React</h4>
+            </article>
+
+            <article class="p-4 flex flex-col items-center justify-center gap-1.5 bg-(--card-color) rounded-lg">
+                <img class="max-w-[150px]"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+                <h4 class="text-center">Tailwind CSS</h4>
+            </article>
+
+            <article class="p-4 flex flex-col items-center justify-center gap-1.5 bg-(--card-color) rounded-lg">
+                <img class="max-w-[150px]"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" />
+                <h4 class="text-center">Node.js</h4>
+            </article>
+
+            <article class="p-4 flex flex-col items-center justify-center gap-1.5 bg-(--card-color) rounded-lg">
+                <img class="max-w-[150px] invert"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" />
+                <h4 class="text-center">Express</h4>
+            </article>
+
+            <article class="p-4 flex flex-col items-center justify-center gap-1.5 bg-(--card-color) rounded-lg">
+                <img class="max-w-[150px]"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
+                <h4 class="text-center">SQL</h4>
+            </article>
+
+            <article class="p-4 flex flex-col items-center justify-center gap-1.5 bg-(--card-color) rounded-lg">
+                <img class="max-w-[150px]"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg" />
+                <h4 class="text-center">SQLite</h4>
+            </article>
+        </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="wrapper w-fit flex flex-col items-center gap-6">
+        <h2 class="text-4xl mr-auto text-(--title-color)">
+            <span class="text-(--red)">//</span> Projetos
+        </h2>
+
+        <div class="grid w-full max-w-[1200px] grid-cols-1 gap-4 lg:grid-cols-2">
+
+            <article
+                class="group overflow-hidden rounded-2xl border border-(--border) bg-(--card-color) transition-all duration-300 hover:border-(--red)">
+                <div class="relative aspect-video overflow-hidden">
+                    <img src="/assets/gb.png" alt="Granja Bitencourt"
+                        class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-linear-to-t from-black/70 via-transparent to-transparent"></div>
+                </div>
+
+                <div class="flex flex-col gap-5 p-6">
+                    <div>
+                        <div class="mb-2 flex items-center justify-between">
+                            <h3 class="text-2xl font-semibold text-(--title-color)">Granja Bitencourt</h3>
+                            <span class="text-sm text-(--red)">Institucional</span>
+                        </div>
+
+                        <p class="leading-relaxed text-white/60">
+                            Site institucional desenvolvido para apresentar a empresa,
+                            seus produtos e facilitar o contato com clientes.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2">
+                        <span class="rounded-full border border-(--border) px-3 py-1 text-sm">HTML</span>
+                        <span class="rounded-full border border-(--border) px-3 py-1 text-sm">CSS</span>
+                        <span class="rounded-full border border-(--border) px-3 py-1 text-sm">JavaScript</span>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <a href="#" class="btn btn-red rounded-full px-5 py-2">Ver projeto</a>
+                        <a href="#" class="btn btn-transparent rounded-full px-5 py-2">GitHub</a>
+                    </div>
+                </div>
+            </article>
+
+            <article
+                class="group overflow-hidden rounded-2xl border border-(--border) bg-(--card-color) transition-all duration-300 hover:border-(--red)">
+                <div class="relative flex aspect-video items-center justify-center overflow-hidden bg-white">
+                    <span
+                        class="select-none text-[clamp(5rem,15vw,11rem)] font-black tracking-[-0.08em] text-yellow-400 transition-transform duration-500 group-hover:scale-110">
+                        CRUD
+                    </span>
+                    <div class="absolute inset-0 bg-linear-to-br from-transparent via-transparent to-black/5"></div>
+                </div>
+
+                <div class="flex flex-col gap-5 p-6">
+                    <div>
+                        <div class="mb-2 flex items-center justify-between">
+                            <h3 class="text-2xl font-semibold text-(--title-color)">Sistema CRUD</h3>
+                            <span class="text-sm text-(--red)">BackEnd</span>
+                        </div>
+
+                        <p class="leading-relaxed text-white/60">
+                            Aplicação BackEnd para gerenciamento de dados, permitindo criar,
+                            visualizar, editar e remover clientes, produtos e realizar vendas
+                            através de uma API integrada ao banco de dados.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2">
+                        <span class="rounded-full border border-(--border) px-3 py-1 text-sm">JavaScript</span>
+                        <span class="rounded-full border border-(--border) px-3 py-1 text-sm">Node.js</span>
+                        <span class="rounded-full border border-(--border) px-3 py-1 text-sm">Express</span>
+                        <span class="rounded-full border border-(--border) px-3 py-1 text-sm">SQLite</span>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <a href="#" class="btn btn-red rounded-full px-5 py-2">Ver projeto</a>
+                        <a href="#" class="btn btn-transparent rounded-full px-5 py-2">GitHub</a>
+                    </div>
+                </div>
+            </article>
+
+            <article
+                class="group overflow-hidden rounded-2xl border border-(--border) bg-(--card-color) transition-all duration-300 hover:border-(--red) lg:col-span-2">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <div class="relative min-h-[350px] overflow-hidden bg-black">
+                        <img src="assets/sv.png" alt="SvartVinyl"
+                            class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-linear-to-t from-black/70 via-transparent to-transparent"></div>
+                    </div>
+
+                    <div class="flex flex-col justify-center gap-6 p-6 lg:p-10">
+                        <div>
+                            <div class="mb-2 flex items-center justify-between">
+                                <h3 class="text-3xl font-semibold text-(--title-color)">SvartVinyl</h3>
+                                <span class="text-sm text-(--red)">E-commerce</span>
+                            </div>
+
+                            <p class="leading-relaxed text-white/60">
+                                E-commerce conceitual especializado em vinis de Black Metal,
+                                desenvolvido com uma identidade visual minimalista, brutalista
+                                e sombria.
+                            </p>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2">
+                            <span class="rounded-full border border-(--border) px-3 py-1 text-sm">HTML</span>
+                            <span class="rounded-full border border-(--border) px-3 py-1 text-sm">CSS</span>
+                            <span class="rounded-full border border-(--border) px-3 py-1 text-sm">JavaScript</span>
+                        </div>
+
+                        <div class="flex gap-3">
+                            <a href="#" class="btn btn-red rounded-full px-5 py-2">Ver projeto</a>
+                            <a href="#" class="btn btn-transparent rounded-full px-5 py-2">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+    <section id="contato" class="wrapper w-fit flex flex-col items-center gap-6">
+        <h2 class="text-4xl mr-auto text-(--title-color)">
+            <span class="text-(--red)">//</span> Contato
+        </h2>
+
+        <div class="w-full max-w-[800px] rounded-2xl border border-(--border) bg-(--card-color) p-6 sm:p-10">
+            <div class="mb-8">
+                <h3 class="text-2xl font-semibold text-(--title-color)">Vamos conversar</h3>
+                <p class="mt-2 text-white/60">
+                    Entre em contato comigo para oportunidades, projetos ou qualquer outra ideia.
+                </p>
+            </div>
+
+            <form class="flex flex-col gap-5">
+                <div class="grid grid-cols-1 gap-5 sm:grid-cols-2">
+                    <div class="flex flex-col gap-2">
+                        <label for="nome" class="text-sm text-(--title-color)">Nome</label>
+                        <input id="nome" type="text" placeholder="Seu nome"
+                            class="rounded-lg border border-(--border) bg-transparent px-4 py-3 outline-none transition-colors placeholder:text-white/30 focus:border-(--red)">
+                    </div>
+
+                    <div class="flex flex-col gap-2">
+                        <label for="email" class="text-sm text-(--title-color)">Email</label>
+                        <input id="email" type="email" placeholder="seu@email.com"
+                            class="rounded-lg border border-(--border) bg-transparent px-4 py-3 outline-none transition-colors placeholder:text-white/30 focus:border-(--red)">
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <label for="assunto" class="text-sm text-(--title-color)">Assunto</label>
+                    <input id="assunto" type="text" placeholder="Sobre o que quer conversar?"
+                        class="rounded-lg border border-(--border) bg-transparent px-4 py-3 outline-none transition-colors placeholder:text-white/30 focus:border-(--red)">
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <label for="mensagem" class="text-sm text-(--title-color)">Mensagem</label>
+                    <textarea id="mensagem" rows="6" placeholder="Escreva sua mensagem..."
+                        class="resize-none rounded-lg border border-(--border) bg-transparent px-4 py-3 outline-none transition-colors placeholder:text-white/30 focus:border-(--red)"></textarea>
+                </div>
+
+                <button type="button" class="btn btn-red w-fit rounded-full px-7 py-3">
+                    Enviar mensagem
+                </button>
+            </form>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <footer class="mt-20 border-t border-(--border)">
+        <div class="wrapper flex flex-col gap-8 py-10 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+                <h3 class="text-xl font-semibold text-(--title-color)">
+                    Vinícius <span class="text-(--red)">Tomaz</span>
+                </h3>
+                <p class="mt-2 text-sm text-white/40">
+                    Programador
+                </p>
+            </div>
+
+            <div class="flex items-center gap-5 text-lg">
+                <a href="https://github.com/ViniciusRuizAuroraTomaz?tab=repositories"
+                    class="transition-colors hover:text-(--red)" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/vinícius-ruiz-aurora-tomaz-10686b362/"
+                    class="transition-colors hover:text-(--red)" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a href="mailto:viniciusauroratomaz@gmail.com" class="transition-colors hover:text-(--red)"
+                    aria-label="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="border-t border-(--border)">
+            <div class="wrapper py-5 text-center text-sm text-white/30">
+                © 2026 Vinícius Tomaz. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
