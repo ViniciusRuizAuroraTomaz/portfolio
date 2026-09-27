@@ -35,156 +35,96 @@
     </header>
 
     <!-- HERO -->
-    <section id="hero" class="pt-12">
-        <div class="mx-auto max-w-[1440px] mt-10">
-            <p class="mb-10 text-center text-white/25">&lt;/&gt;</p>
-            <h1 class="text-[clamp(3rem,10vw,10rem)] text-(--title-color) uppercase tracking-[-0.04em] text-center">
-                Vinícius <span class="text-(--red)" id="tomaz">Tomaz</span>
-            </h1>
-            <p class="text-center text-xl">Programador</p>
-            <div class="hero-actions flex justify-center mt-15 gap-3">
-                <button class="btn btn-transparent py-3 px-8 text-2xl rounded-full">
-                    Contato
-                </button>
-                <button class="btn btn-red py-3 px-6 text-2xl rounded-full">
-                    Projetos
-                </button>
+    <section id="hero" class="hero">
+        <div class="hero-shell">
+            <div class="hero-copy">
+                <p class="hero-badge"><span class="hero-badge-dot"></span> Disponível para estágio e projetos</p>
+
+                <h1 class="hero-title">
+                    Vinícius <span class="hero-highlight" id="tomaz">Tomaz</span>
+                </h1>
+
+                <p class="hero-role">
+                    <span class="hero-role-text" data-typed>Full Stack</span>
+                </p>
+
+                <p class="hero-description">
+                    Desenvolvo interfaces modernas, experiências digitais funcionais e soluções web com foco em
+                    performance, usabilidade e resultados reais.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="mailto:viniciusauroratomaz@gmail.com" class="btn btn-red hero-btn">Contato</a>
+                    <a href="#sobre" class="btn btn-transparent hero-btn">Sobre</a>
+                </div>
             </div>
         </div>
-        <a href="" class="mx-auto relative left-1.5 mt-auto mb-15 border p-2 border-white/10 rounded-full"><i
-                class="fa-solid fa-chevron-down text-white/20 arrow"></i></a>
+
     </section>
     <!-- SOBRE -->
-    <section class="wrapper flex w-full flex-col gap-6">
-        <h2 class="text-4xl text-(--title-color)">
-            <span class="text-(--red)">//</span> Sobre
-        </h2>
+    <section id="sobre" class="wrapper about-section">
+        <div class="section-heading">
+            <h2 class="text-4xl text-(--title-color)">
+                <span class="text-(--red)">//</span> Sobre
+            </h2>
+        </div>
 
-        <div class="grid grid-cols-1 gap-3 lg:grid-cols-3">
-
-            <article
-                class="flex min-h-[400px] flex-col rounded-2xl border border-(--border) bg-(--card-color) p-6 transition-colors duration-300 hover:border-(--red)">
-
-                <div class="flex items-center gap-4 border-b border-(--border) pb-5">
-                    <div
-                        class="flex aspect-square w-[70px] shrink-0 items-center justify-center rounded-full border-2 border-(--red)">
-                        <span class="text-2xl font-semibold text-(--red)">
-                            VT
-                        </span>
-                    </div>
-
-                    <div class="flex flex-col gap-1">
-                        <h3 class="text-xl text-(--red)">
-                            Vinícius Tomaz
-                        </h3>
-
-                        <p class="text-sm">
-                            Programador Full Stack
-                        </p>
+        <div class="about-layout">
+            <article class="about-panel about-panel-primary">
+                <div class="panel-top">
+                    <div class="avatar">VT</div>
+                    <div>
+                        <p class="panel-name">Vinícius Tomaz</p>
+                        <span class="panel-role">Programador Full Stack</span>
                     </div>
                 </div>
 
-                <div class="flex flex-1 items-center py-6">
-                    <p class="leading-relaxed">
-                        Olá, me chamo Vinícius, tenho 17 anos e sou programador.
-                        Atualmente estudo no Colégio Cotemig e estou no segundo ano
-                        do curso. Meu objetivo é desenvolver sistemas e aplicações
-                        web, sempre buscando aprender novas tecnologias e evoluir
-                        profissionalmente. Estou aberto a oportunidades de estágio
-                        para adquirir experiência prática e conhecer melhor o
-                        ambiente profissional.
+                <div class="panel-body">
+                    <p>
+                        Olá, me chamo Vinícius, tenho 17 anos e sou programador. Atualmente estudo no Colégio Cotemig e
+                        estou no segundo ano do curso. Meu objetivo é desenvolver sistemas e aplicações web, sempre
+                        buscando
+                        aprender novas tecnologias e evoluir profissionalmente.
                     </p>
                 </div>
-
             </article>
 
-            <article
-                class="flex min-h-[400px] flex-col rounded-2xl border border-(--border) bg-(--card-color) p-6 transition-colors duration-300 hover:border-(--red) lg:col-span-2">
-
-                <div class="grid grid-cols-1 gap-10 pb-8 sm:grid-cols-2">
-
-                    <div>
-                        <div class="mb-4 flex items-center gap-3">
-
-                            <h3 class="text-xl text-(--title-color)">
-                                <span class="text-(--red)">//</span> Formação
-                            </h3>
-                        </div>
-
-                        <p class="leading-relaxed">
-                            Cursando o ensino técnico em Programação
-                            no Colégio Cotemig.
-                        </p>
-
-                        <span class="mt-5 block text-sm">
-                            2/25 - 12/27
-                        </span>
+            <article class="about-panel">
+                <div class="panel-grid">
+                    <div class="panel-card">
+                        <span class="panel-label">Formação</span>
+                        <strong>Ensino Técnico em Informática no Colégio Cotemig</strong>
+                        <p> 02/25 - 12/27</p>
                     </div>
 
-                    <div>
-                        <div class="mb-4 flex items-center gap-3">
+                    <div class="panel-card">
+                        <span class="panel-label">Interesse</span>
+                        <strong>Desenvolvimento web, interfaces e soluções funcionais.</strong>
+                    </div>
 
-                            <h3 class="text-xl text-(--title-color)">
-                                <span class="text-(--red)">//</span> Redes sociais
-                            </h3>
-                        </div>
-
-                        <p class="leading-relaxed">
-                            Me encontre também nas minhas redes e plataformas.
-                        </p>
-
-                        <div class="mt-5 flex gap-4">
+                    <div class="panel-card panel-card-wide">
+                        <span class="panel-label">Redes</span>
+                        <div class="social-links">
                             <a href="https://github.com/ViniciusRuizAuroraTomaz?tab=repositories"
-                                class="text-xl transition-colors hover:text-(--red)">
+                                aria-label="GitHub de Vinícius Tomaz">
                                 <i class="fa-brands fa-github"></i>
                             </a>
-
                             <a href="https://www.linkedin.com/in/vinícius-ruiz-aurora-tomaz-10686b362/"
-                                class="text-xl transition-colors hover:text-(--red)">
+                                aria-label="LinkedIn de Vinícius Tomaz">
                                 <i class="fa-brands fa-linkedin-in"></i>
                             </a>
-
-                            <a href="mailto:viniciusauroratomaz@gmail.com"
-                                class="text-xl transition-colors hover:text-(--red)">
+                            <a href="mailto:viniciusauroratomaz@gmail.com" aria-label="Enviar e-mail para Vinícius">
                                 <i class="fa-solid fa-envelope"></i>
                             </a>
                         </div>
                     </div>
 
-                </div>
-
-                <div class="flex flex-1 flex-col justify-center border-t border-(--border) pt-8">
-
-                    <div class="mb-5 flex items-center gap-3">
-
-                        <h3 class="text-xl text-(--title-color)">
-                            <span class="text-(--red)">//</span> Mentalidade
-                        </h3>
+                    <div class="panel-card panel-card-wide">
+                        <span class="panel-label">Mentalidade</span>
+                        <strong>Ambicioso, curioso e sempre buscando novos desafios.</strong>
                     </div>
-
-                    <div class="grid grid-cols-1 gap-3 sm:grid-cols-3">
-
-                        <div class="flex items-center gap-3">
-                            <i class="fa-solid fa-plus text-xs text-(--red)"></i>
-                            <span>Ambicioso e focado em evolução</span>
-                        </div>
-
-                        <div class="flex items-center gap-3">
-                            <i class="fa-solid fa-plus text-xs text-(--red)"></i>
-                            <span>Curioso sobre novas tecnologias</span>
-                        </div>
-
-                        <div class="flex items-center gap-3">
-                            <i class="fa-solid fa-plus text-xs text-(--red)"></i>
-                            <span>Sempre buscando novos desafios</span>
-                        </div>
-
-                    </div>
-
                 </div>
-
             </article>
-
         </div>
     </section>
 
@@ -253,7 +193,7 @@
             <article
                 class="group overflow-hidden rounded-2xl border border-(--border) bg-(--card-color) transition-all duration-300 hover:border-(--red)">
                 <div class="relative aspect-video overflow-hidden">
-                    <img src="assets/gb.png" alt="Granja Bitencourt"
+                    <img src="/assets/gb.png" alt="Granja Bitencourt"
                         class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105">
                     <div class="absolute inset-0 bg-linear-to-t from-black/70 via-transparent to-transparent"></div>
                 </div>
@@ -278,8 +218,10 @@
                     </div>
 
                     <div class="flex gap-3">
-                        <a href="#" class="btn btn-red rounded-full px-5 py-2">Ver projeto</a>
-                        <a href="#" class="btn btn-transparent rounded-full px-5 py-2">GitHub</a>
+                        <a href="https://viniciusruizauroratomaz.github.io/Granja-Bitencourt/"
+                            class="btn btn-red rounded-full px-5 py-2">Ver projeto</a>
+                        <a href="https://github.com/ViniciusRuizAuroraTomaz/Granja-Bitencourt"
+                            class="btn btn-transparent rounded-full px-5 py-2">GitHub</a>
                     </div>
                 </div>
             </article>
@@ -316,8 +258,10 @@
                     </div>
 
                     <div class="flex gap-3">
-                        <a href="#" class="btn btn-red rounded-full px-5 py-2">Ver projeto</a>
-                        <a href="#" class="btn btn-transparent rounded-full px-5 py-2">GitHub</a>
+                        <a href="https://github.com/ViniciusRuizAuroraTomaz/CRUD"
+                            class="btn btn-red rounded-full px-5 py-2">Ver projeto</a>
+                        <a href="https://github.com/ViniciusRuizAuroraTomaz/CRUD"
+                            class="btn btn-transparent rounded-full px-5 py-2">GitHub</a>
                     </div>
                 </div>
             </article>
@@ -352,8 +296,10 @@
                         </div>
 
                         <div class="flex gap-3">
-                            <a href="#" class="btn btn-red rounded-full px-5 py-2">Ver projeto</a>
-                            <a href="#" class="btn btn-transparent rounded-full px-5 py-2">GitHub</a>
+                            <a href="https://viniciusruizauroratomaz.github.io/SvartVinyl/"
+                                class="btn btn-red rounded-full px-5 py-2">Ver projeto</a>
+                            <a href="https://github.com/ViniciusRuizAuroraTomaz/SvartVinyl"
+                                class="btn btn-transparent rounded-full px-5 py-2">GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -374,34 +320,34 @@
                 </p>
             </div>
 
-            <form class="flex flex-col gap-5">
+            <form id="contact-form" class="flex flex-col gap-5">
                 <div class="grid grid-cols-1 gap-5 sm:grid-cols-2">
                     <div class="flex flex-col gap-2">
                         <label for="nome" class="text-sm text-(--title-color)">Nome</label>
-                        <input id="nome" type="text" placeholder="Seu nome"
+                        <input id="nome" name="nome" type="text" placeholder="Seu nome" required
                             class="rounded-lg border border-(--border) bg-transparent px-4 py-3 outline-none transition-colors placeholder:text-white/30 focus:border-(--red)">
                     </div>
 
                     <div class="flex flex-col gap-2">
                         <label for="email" class="text-sm text-(--title-color)">Email</label>
-                        <input id="email" type="email" placeholder="seu@email.com"
+                        <input id="email" name="email" type="email" placeholder="seu@email.com" required
                             class="rounded-lg border border-(--border) bg-transparent px-4 py-3 outline-none transition-colors placeholder:text-white/30 focus:border-(--red)">
                     </div>
                 </div>
 
                 <div class="flex flex-col gap-2">
                     <label for="assunto" class="text-sm text-(--title-color)">Assunto</label>
-                    <input id="assunto" type="text" placeholder="Sobre o que quer conversar?"
+                    <input id="assunto" name="assunto" type="text" placeholder="Sobre o que quer conversar?" required
                         class="rounded-lg border border-(--border) bg-transparent px-4 py-3 outline-none transition-colors placeholder:text-white/30 focus:border-(--red)">
                 </div>
 
                 <div class="flex flex-col gap-2">
                     <label for="mensagem" class="text-sm text-(--title-color)">Mensagem</label>
-                    <textarea id="mensagem" rows="6" placeholder="Escreva sua mensagem..."
+                    <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreva sua mensagem..." required
                         class="resize-none rounded-lg border border-(--border) bg-transparent px-4 py-3 outline-none transition-colors placeholder:text-white/30 focus:border-(--red)"></textarea>
                 </div>
 
-                <button type="button" class="btn btn-red w-fit rounded-full px-7 py-3">
+                <button type="submit" class="btn btn-red w-fit rounded-full px-7 py-3">
                     Enviar mensagem
                 </button>
             </form>
